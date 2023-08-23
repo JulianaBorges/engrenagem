@@ -1,0 +1,128 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: arial;
+}
+
+/* ----nav ----*/
+
+header{
+    background: #1d1e20;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{    
+    display: flex;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top:30px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+/* ---- container 01 ---- */
+.container-ciclismo{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-ciclismo div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.container-trilha{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.container-trilha div:nth-child(n + 4){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.container-trilha div.anuncio{
+    grid-column: 1;
+    grid-row: 2 / 5;
+    border-top: 10px solid blue;
+    display:block;        
+}
+
+.Grid-mask{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.Grid-mask div {
+    max-width: 200px;
+}
+
+#mask01 {
+ clip-path: circle();
+}
+
+
+.swiper-slide-active::after{
+    background: none;
+}
+
+.swiper-slide div {
+    text-align: center;
+    display: none;
+    opacity: 0;
+}
+
+.swiper-slide-active div {
+    display: block;
+    opacity: 1;
+}
+.swiper-slide h2{
+    font-size: 1.2rem;
+    font-family: "libre baskerville", serif;
+    position:relative;
+
+}
+
+.swiper-slide h2::after{
+    position: absolute;
+    content: "";
+    bottom: 20px;
+    left: 50%;
+    
+}
+
