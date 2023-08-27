@@ -17,7 +17,6 @@ for (let i = 0; i < 11; i++){
     case "shark":
       console.log("peixe")
       break; 
-
     default:
       console.log("nenhum aminal declarado")
       break;
