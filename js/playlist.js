@@ -1,6 +1,6 @@
 let musicas = [
-    {titulo: 'Musica 01', artista: 'Artista 01', src:'/musicas/Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3', img:'/img/Capturar.png'},
-    {titulo: 'Musica 02', artista: 'Artista 02', src:'/musicas/yanvince, comusal - magnificent [NCS Release].mp3', img:'/img/fruit-6620951_1280.jpg'}
+    {titulo: 'Musica 01', artista: 'Artista 01', src:'./musicas/Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3', img:'./img/Capturar.png'},
+    {titulo: 'Musica 02', artista: 'Artista 02', src:'./musicas/yanvince, comusal - magnificent [NCS Release].mp3', img:'./img/fruit-6620951_1280.jpg'}
 ]
 
 let musica = document.querySelector('audio');
