@@ -1,7 +1,7 @@
 const frm  = document.querySelector("form")
 const resp = document.querySelector("h3")
 
-frm.addEventListener ("submit" , (e) =>{
+frm.addEventListener ("submit" , (e) => {
     const quilo = Number(frm.inQuilo.value)
     const consumo = Number(frm.inConsumo.value)
 
@@ -9,5 +9,4 @@ frm.addEventListener ("submit" , (e) =>{
     resp.innerText = `Valor a pagar R$: ${valor.toFixed(2)}`
 
     e.preventDefault()
-
 });
