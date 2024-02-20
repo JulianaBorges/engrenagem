@@ -2,7 +2,7 @@ const frm = document.querySelector("form")
 const resp = document.querySelector("#outResp")
 const resp1 = document.querySelector("#outResp1")
 
-frm.addEventListener ("submit" , (e) => {
+frm.addEventListener ("submit", (e) => {
     const preco = Number(frm.inPreco.value)
     const produto = frm.inProduto.value
 
