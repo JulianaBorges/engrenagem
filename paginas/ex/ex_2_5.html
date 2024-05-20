@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Farmácia JS</h1>
+    <form action="">
+        <p for="">Medicamento
+            <select name="" id="inRemedio" required>
+                <option value="">Selecione o Produto</option>
+                <optgroup label="ANALGÉSICO">
+                    <option value="Paracetamol">Paracetamol</option>
+                    <option value="Dipirona">Dipirona</option>
+                    <option value="Nimesulida">Nimesulida</option>
+                </optgroup>
+                <optgroup label="ANTIBIÓTICO">
+                    <option value="Amoxicilina">Amoxicilina</option>
+                    <option value="Ampicilina">Ampicilina</option>
+                    <option value="Dicloxacilina">Dicloxacilina</option>
+                </optgroup>
+                <optgroup label="ANTI-INFLAMATÓRIO">
+                    <option value="Ibuprofeno">Ibuprofeno</option>
+                    <option value="Dexametasona">Dexametasona</option>
+                    <option value="Prednisona">Prednisona</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p for="">Preço R$
+        <input type="number" id="inPreco"  min="0" step="0.01" required>
+        </p>
+        
+        <input type="submit" value="mostrar Promoção">
+    </form>
+
+    <h3 id="outResp1"></h3>
+    <h3 id="outResp2"></h3>
+
+    <script src="/js/ex/ex_2_5.js"></script>
+    
+</body>
+</html>
