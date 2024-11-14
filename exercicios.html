@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicios</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/ferramentas.css">
+
 </head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Logo</a>
+    <nav>
+      <ul class="menu">
+        <li><a href="sobre">Sobre</a></li>
+        <li><a class="" href="exercicios.html">Exercicios</a></li>
+        <li><a class="" href="player.html">Player MP3</a></li>
+        <li><a class="" href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="mario_jump.html">Jogo Mario</a></li>
+        <li><a class="" href="login.html">Entrar</a></li>
+        
+      </ul>
+    </nav>
+  </header>
 
 <style>
     div#area {
@@ -79,23 +97,119 @@
                     
                 postesDistancia()
     </script> -->
-    <div>
-        <h1>Cine JS: Filmes em Cartaz</h1>
-        <form>            
-            <p>Titulo do Filme:
-                <input type="text" id="inTitulo" >
-            </p>
-            <p>Duração (min):
-                <input type="number" id="inDuracao" >
-            </p>
-            <input type="submit" value="converter horas em minutos">
-        </form>
-        <h1></h1>
-        <h2></h2>
+    <div class="card-container">
+        <!-- Formulário 1 -->
+        <div class="card">
+            <h2>Cine JS</h2>
+            <form id="formFilmeForm">
+                <p>Título do Filme:
+                    <input type="text" id="inTitulo">
+                </p>
+                <p>Duração (min):
+                    <input type="text" id="inDuracao">
+                </p>
+                <input type="submit" value="converter horas em minutos">
+            </form>
+            <div class="card-text">
+                <h3 id="resTitulo"></h3>
+                <span id="resDuracao"></span>
+            </div>
+        </div>
+  
+        <!-- Formulário 2 -->
+        <div class="card">
+            <h2>Quandriênios</h2>
+            <form id="formQuandrieniosForm">
+                <p>Salário:
+                    <input type="text" name="salario" id="inSalario">
+                </p>
+                <p>Tempo:
+                    <input type="text" name="tempo" id="inTempo">
+                </p>
+                <input type="submit" value="Calcular">
+            </form>
+            <div class="card-text">
+                <h3 id="outResp01"></h3>
+                <h3 id="outResp02"></h3>
+            </div>
+        </div>
+
+        <!-- Formulário 3 -->
+        <div class="card">
+            <h2>Lan house JS</h2>
+                <form id="formLanHouseForm">
+                    <p>Valor por 15min de uso R$
+                        <input type="text" name="valor" id="inValor">
+                    </p>
+                    <p>Tempo de uso do cliente:
+                        <input type="text" name="inTempo">
+                    </p>
+                        <input type="submit" value="Calcular valor a pagar">
+                </form>
+                <div class="card-text">
+                    <h3 id="outCredito"></h3>
+                </div>
+        </div>
+        
+        <!-- Formulário 1 -->
+        <div class="card">
+            <h2>Cine JS</h2>
+            <form id="formFilmeForm">
+                <p>Título do Filme:
+                    <input type="text" id="inTitulo">
+                </p>
+                <p>Duração (min):
+                    <input type="text" id="inDuracao">
+                </p>
+                <input type="submit" value="converter horas em minutos">
+            </form>
+            <div class="card-text">
+                <h3 id="resTitulo"></h3>
+                <span id="resDuracao"></span>
+            </div>
+        </div>
+  
+        <!-- Formulário 2 -->
+        <div class="card">
+            <h2>Quandriênios</h2>
+            <form id="formQuandrieniosForm">
+                <p>Salário:
+                    <input type="text" name="salario" id="inSalario">
+                </p>
+                <p>Tempo:
+                    <input type="text" name="tempo" id="inTempo">
+                </p>
+                <input type="submit" value="Calcular">
+            </form>
+            <div class="card-text">
+                <h3 id="outResp01"></h3>
+                <h3 id="outResp02"></h3>
+            </div>
+        </div>
+
+        <!-- Formulário 3 -->
+        <div class="card">
+            <h2>Lan house JS</h2>
+                <form id="formLanHouseForm">
+                    <p>Valor por 15min de uso R$
+                        <input type="text" name="valor" id="inValor">
+                    </p>
+                    <p>Tempo de uso do cliente:
+                        <input type="text" name="inTempo">
+                    </p>
+                        <input type="submit" value="Calcular valor a pagar">
+                </form>
+                <div class="card-text">
+                    <h3 id="outCredito"></h3>
+                </div>
+        </div>
+
     </div>
+
 </body>
 
 <script src="js/ex/ex_3.js"></script>
+<!-- <script src="js/ex/ex_3_1.js"></script> -->
 
 
 </html>

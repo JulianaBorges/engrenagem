@@ -1,6 +1,10 @@
-const frm   =   document.querySelector("form")
-const resp1 =   document.querySelector("#outResp01")
-const resp2 =   document.querySelector("#outResp02")
+
+console.log('Cheguei aqui ;)')
+
+
+const frm = document.querySelector('form'); // Corrigido para selecionar o ID
+const resp1 = document.querySelector("#outResp01");
+const resp2 = document.querySelector("#outResp02");
 
 frm.addEventListener ("submit", (e) => {
     const salario = Number(frm.inSalario.value)
