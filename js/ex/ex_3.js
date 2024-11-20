@@ -1,23 +1,51 @@
-const frm = document.querySelector('form')
-const resp01 = document.querySelector("h1")
-const resp02  = document.querySelector("h2")
-// const resTitulo = document.getElementById("resTitulo")
-// const resDuracao = document.getElementById("resDuracao")
+document.addEventListener("DOMContentLoaded", () => {
+    const formFilme = document.getElementById("formFilmeForm");
+    const formQuandrienios = document.getElementById("formQuandrieniosForm");
+    const formLanHouse = document.getElementById("formLanHouseForm");
 
+    formFilme.addEventListener("submit", (e) => {
+        e.preventDefault();
+        converterFilme();
+    });
 
-frm.addEventListener("submit", (e) => {
+    formQuandrienios.addEventListener("submit", (e) => {
+        e.preventDefault();
+        calcularQuandrienios();
+    });
 
-    const titulo  = frm.inTitulo.value
-    const duracao = Number(frm.inDuracao.value)
+    formLanHouse.addEventListener("submit", (e) =>{
+        e.preventDefault();
+        calcularLanHouser();
+    } )
+});
 
-    const horas = Math.floor(duracao / 60)
-    const minutos = duracao % 60
+function converterFilme() {
+    const titulo = document.getElementById("inTitulo").value;
+    const duracao = parseInt(document.getElementById("inDuracao").value);
+    const horas = Math.floor(duracao / 60);
+    const minutos = duracao % 60;
 
-    console.log("to aqui")
+    document.getElementById("resTitulo").innerText = `Filme: ${titulo}`;
+    document.getElementById("resDuracao").innerText = `Duração: ${horas}h ${minutos}min`;
+}
 
-    resp01.innerText = titulo
-    resp02.innerText = `${horas} hora(s) e ${minutos} minuto(s)`
-    
-    e.preventDefault()
+function calcularQuandrienios() {
+    const salario = Number(document.getElementById("inSalario").value);
+    const tempo = Number(document.getElementById("inTempo").value);
 
-})
+    let quadrienios = Math.floor(tempo / 4);
+    let acrescimo = (salario * quadrienios) / 100;
+
+    document.getElementById("outResp01").innerText = `Quantidade de Quadrienios: ${quadrienios} (anos)`;
+    document.getElementById("outResp02").innerText = `Novo Salário R$: ${(salario + acrescimo).toFixed(2)}`;
+}
+
+function calcularLanHouser(){
+        const valor = Number(document.getElementById("inValor").value)
+        const tempo = Number(document.getElementById("inTempo").value)
+
+        let valorTempo = tempo / 15
+        let total = Math.ceil(valorTempo) * valor
+
+        document.getElementById("outCredito").innerHTML = `Valor a pagar R$: ${total.toFixed(2)} `
+}

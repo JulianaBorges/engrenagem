@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #EBE9FE;
+    --font-color: #070F1C;
+    --primary-color: #0E213B;
+    --secondary-color:#7EA1C4;    
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: 24px;
+}
+

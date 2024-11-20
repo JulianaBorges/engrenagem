@@ -3,99 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicios</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/ferramentas.css">
+
 </head>
-
-<style>
-    div#area {
-        font: normal 20pt Arial;
-        background: rgb(42,139,42);
-        color:beige;
-        width: 200px;
-        height: 200px;
-        line-height: 200px;
-        text-align: center;
-        border-radius: 50%;
-    }
-</style>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="paginas/ex/ex_2_3.html">Revenda de veiculo</a></li>
-            <li><a href="paginas/ex/ex_2_4.html">Restaurante JS</a></li>
-            <li><a href="paginas/ex/ex_2_5.html">Farmácia JS</a></li>
-            <li><a href="paginas/ex/ex_2_11.html">Supermercado</a></li>
-            <li><a href="paginas/ex/ex_2_12.html">Lan House JS</a></li>
-            <li><a href="paginas/ex/ex_3_1.html">Calculadors Quandriênios</a></li>
+  <header>
+    <a class="logo" href="index.html">Logo</a>
+        <nav>
+        <ul class="menu">
+            <li><a href="sobre">Sobre</a></li>
+            <li><a class="" href="exercicios.html">Exercicios</a></li>
+            <li><a class="" href="player.html">Player MP3</a></li>
+            <li><a class="" href="cadastro.html">Cadastre-se</a></li>
+            <li><a href="mario_jump.html">Jogo Mario</a></li>
+            <li><a class="" href="login.html">Entrar</a></li>
+            
         </ul>
-    </nav>
-    <!-- <div>
-        <form action="">
-            <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="inNome" required/>     
-            <br>
-            <label for="Idade">Idade:</label>
-            <input type="number" id="inIdade" required/>
-            <br>
-            <input type="submit" value="mostrar">
-            </div> 
-        </form>
-        <h3></h3>
-        <h3 id="idade"></h3>
+        </nav>
+  </header>
+    <div class="titulo">
+        <h2>Exercicios do livro: Lógica de Programação e Algoritmo com <i>JavaScript</i></b></h2>
+    </div>
+    <div class="card-container">
+        <!-- Formulário 1 -->
+        <div class="card">
+            <h2>Cine JS</h2>
+            <form id="formFilmeForm">
+                <p>Título do Filme:
+                    <input type="text" id="inTitulo">
+                </p>
+                <p>Duração (min):
+                    <input type="text" id="inDuracao">
+                </p>
+                <input type="submit" value="converter horas em minutos">
+            </form>
+            <div class="card-text">
+                <h3 id="resTitulo"></h3>
+                <span id="resDuracao"></span>
+            </div>
+        </div>
+  
+        <!-- Formulário 2 -->
+        <div class="card">
+            <h2>Quandriênios</h2>
+            <form id="formQuandrieniosForm">
+                <p>Salário:
+                    <input type="text" name="salario" id="inSalario">
+                </p>
+                <p>Tempo:
+                    <input type="text" name="tempo" id="inTempo">
+                </p>
+                <input type="submit" value="Calcular">
+            </form>
+            <div class="card-text">
+                <h3 id="outResp01"></h3>
+                <h3 id="outResp02"></h3>
+            </div>
+        </div>
+
+        <!-- Formulário 3 -->
+        <div class="card">
+            <h2>Lan house JS</h2>
+                <form id="formLanHouseForm">
+                    <p>Valor por 15min de uso R$
+                        <input type="text" name="valor" id="inValor">
+                    </p>
+                    <p>Tempo de uso do cliente:
+                        <input type="text" name="inTempo">
+                    </p>
+                        <input type="submit" value="Calcular valor a pagar">
+                </form>
+                <div class="card-text">
+                    <h3 id="outCredito"></h3>
+                </div>
+        </div>
+
     </div>
 
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
-        Interaja...
-    </div>
-
-    <script>
-        let a = window.document.getElementById('area')
-
-        function clicar() {
-            a.innerText = 'click!'
-            a.style.background = 'pink'
-        }
-        function entrar() {
-            a.innerText = 'entrar'
-            a.style.background = 'red'
-        }
-        function sair() {
-            a.innerText = 'sair!'
-            a.style.background = 'green'
-        }
-
-        function postesDistancia(){
-            let distancia = 0;
-            let postes = 1
-                while(postes <= 5){
-                    distancia += 10;
-                    postes++;
-                    }
-                console.log(postes)
-                console.log(distancia)
-                }
-                    
-                postesDistancia()
-    </script> -->
-    <div>
-        <h1>Cine JS: Filmes em Cartaz</h1>
-        <form>            
-            <p>Titulo do Filme:
-                <input type="text" id="inTitulo" >
-            </p>
-            <p>Duração (min):
-                <input type="number" id="inDuracao" >
-            </p>
-            <input type="submit" value="converter horas em minutos">
-        </form>
-        <h1></h1>
-        <h2></h2>
-    </div>
 </body>
 
 <script src="js/ex/ex_3.js"></script>
+<!-- <script src="js/ex/ex_3_1.js"></script> -->
 
 
 </html>
