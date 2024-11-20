@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memoria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/jogo-da-memoria.css">
+
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">Logo</a>
+    <nav>
+      <ul class="menu">
+        <li><a href="sobre">Sobre</a></li>
+        <li><a class="" href="exercicios.html">Exercicios</a></li>
+        <li><a class="" href="player.html">Player MP3</a></li>
+        <li><a class="" href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="mario_jump.html">Jogo Mario</a></li>
+        <li><a class="" href="jogo-da-memoria.html">Jogo da Memoria</a></li>
+        <li><a class="" href="login.html">Entrar</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+<body>
+    <a href="#abrirModal">Open Modal</a>
+      <div id="abrirModal" class="container_modal">
+        <div class="modal">
+        <a href="#fechar" title="Fechar" class="fechar">x</a>
+        <h1>Bem Vindo !!</h1>
+        <button id="button_start">Iniciar Jogo</button>  
+          </div>
+      </div>
+    
+      <section class="cronometro">
+        <h2><span id="seconds">00</span>:<span id="tens">00</span></h2>
+        <button id="button_start" onclick="javascript:document.location.reload()">Start</button>
+        <button id="button_pause">Pause</button>
+        <button id="button_stop" onclick="javascript:document.location.reload()">stop</button>
+      </section>
+    
+    <section class="memory-game">
+      
+      <div class="memory-card" data-coffe="cup">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/614774-de-clipart-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      <div class="memory-card" data-coffe="cup">
+          <img class="front-face"  src="https://static.vecteezy.com/ti/vetor-gratis/p1/614774-de-clipart-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      
+      <div class="memory-card" data-coffe="stamp">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/614812-de-rotulo-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      <div class="memory-card" data-coffe="stamp">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/614812-de-rotulo-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      
+      <div class="memory-card" data-coffe="stamp_star">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/614970-de-clipart-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      <div class="memory-card" data-coffe="stamp_star">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/614970-de-clipart-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      
+      <div class="memory-card" data-coffe="coffe_cup">
+          <img class="front-face"src="https://static.vecteezy.com/ti/vetor-gratis/p1/615048-de-clipart-de-desenhos-animados-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      <div class="memory-card" data-coffe="coffe_cup">
+          <img class="front-face"src="https://static.vecteezy.com/ti/vetor-gratis/p1/615048-de-clipart-de-desenhos-animados-de-cafe-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      
+      <div class="memory-card" data-coffe="book_worm">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/266909-de-leitor-avido-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      <div class="memory-card" data-coffe="book_worm">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/266909-de-leitor-avido-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      
+      <div class="memory-card" data-coffe="snake">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/173142-desenho-animado-de-cartoon-anaconda-gratis-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+      <div class="memory-card" data-coffe="snake">
+          <img class="front-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/173142-desenho-animado-de-cartoon-anaconda-gratis-grátis-vetor.png" alt="frente_da_carta">
+          <img class="back-face" src="https://static.vecteezy.com/ti/vetor-gratis/p1/359335-de-clipart-de-elementos-de-cafe-grátis-vetor.png" alt="verso_da_carta">
+        </div>
+    </section>
+    
+  </body>
+  <script type="module" src="/js/jogo_da_memoria.js"></script>
+  
+  </html>
