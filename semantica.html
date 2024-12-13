@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Juliana Borges">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Titulo</h1>
+        <h2>Subtitulo</h2>
+        <h4>Descrição só a pagina</h4>
+        <hr> 
+    </header>
+    <main>
+        <nav>
+            <button onclick="document.location='/index.html'" title="Home">Home</button>
+            <button onclick="document.location='/cadastro.html'" title="cadastre-se na nossa plataforma">Cadastro</button>
+            <button href="#contatos" title="entre em contatos conosco">Contatos</button>
+            <hr>
+        </nav>
+        <!-- Secão One -->
+        <section>
+            <h2>Seção One</h2>
+            <p>Descrições sobre a seção</p>
+            <article>                    
+                <details>
+                    <summary>Option 01</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sit!</p>
+                </details>
+                <details>
+                    <summary>Option 02</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, amet?</p>
+                </details>
+                <details>
+                    <summary>Option 03</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, et?</p>
+                </details>
+            </article> 
+            <aside>
+                <p><small>@oficial</small></p>
+            </aside>
+            <hr>
+        </section>
+
+        <!-- seção two -->
+        <section>
+            <h2>Seção Two</h2>
+            <p>Descrição sobre da seção.</p>
+            <article>
+                <dialog open>This is an open dialog window</dialog>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nam.
+                    <br>... Lorem ipsum dolor sit amet consectetur.
+                    <br>... Lorem ipsum dolor sit amet consectetur.
+                    <br>... Lorem ipsum dolor sit amet.
+                </p>
+                <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows) | 
+                    Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS)</p>
+                <p><samp>File not found.<br>Press F1 to continue</samp></p>
+            </article>
+            <hr>
+        </section>
+        
+        <!-- seção three -->
+        <section>
+            <article>
+                <h2>Seção Three</h2>
+                <p>Descrições sobre a seção</p>
+                <figure>
+                    <img src="/img/ciclismo/pexels-saurabh-narwade-2924491.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+                    <figcaption>Clique na mesa, tênis ou no asfalto.</figcaption>
+                    <map name="workmap">
+                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm" title="clique-me">
+                        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" title="clique-me">
+                        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm" title="clique-me">
+                    </map>
+                </figure>
+                
+            </article>
+            <hr>
+        </section>
+
+        <!-- Seção Four -->
+        <section>
+            <h2>Seção four</h2>
+            <p>Descrição sobre a seção</p>
+            <div>
+                <h1 popover id="myheader">Enviado com Sucesso</h1>
+                <button popovertarget="myheader">Enviar</button>
+                <progress value="50" max="100"></progress>
+            </div>
+            <hr>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>What is your favorite web technology</legend>
+            
+                <label for="html">HTML</label>
+                <input type="radio" name="webfeature" value="html" id="html">
+            
+                <label for="css">CSS</label>
+                <input type="radio" name="webfeature" value="css" id="css">
+            </fieldset>
+            
+        </section>
+        
+        <section>
+            <h2>Seção five</h2>
+            <p>Here is some <mark>highlighted</mark> text.</p>
+            <p><a href="http://curriculo.html" title="Curriculo Vitae" target="_blank">Curriculo Vitae</a>
+            <a href="mailto:someone@example.com">Send email</a>
+            <a href="tel:011922334455">(11)922334455</a>
+            <a href="#C4"></a></p>
+            <address>
+                Rua Aruanã 967 <br>Centro <br> Marcelândia <br>MT-BR
+            </address>
+
+           <br>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        &lt;&lt;&lt;&lt; &copy Juliana Borges &gt;&gt;&gt;&gt   
+    </footer>
+</body>
+</html>
