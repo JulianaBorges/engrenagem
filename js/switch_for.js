@@ -18,7 +18,7 @@ for (let i = 0; i < 11; i++){
       console.log("peixe")
       break; 
     default:
-      console.log("nenhum aminal declarado")
+      console.log("nenhum animal declarado")
       break;
   }
 
